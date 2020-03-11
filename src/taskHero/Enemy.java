@@ -17,7 +17,7 @@ public class Enemy implements Mortal {
     public static int getHealth() {
         return health;
     }
-    public static void takeDamage(int damage) {
+    public  void takeDamage(int damage) {
         //Enemy enemy = new Enemy(100);
         health = health - damage;
         System.out.print(damage + " урон врагу,  ");
@@ -25,12 +25,13 @@ public class Enemy implements Mortal {
     }
     @Override
     public boolean hisAlive() {
-        if(health < 0){
+      \**  if(health < 0){
             return true;}
         else {
-            System.out.println("Надо еще вмазать");
+            System.out.println("Надо еще вмазать");*\
         return false;
         }
+        
     }
 }
 

@@ -7,7 +7,7 @@ public class Enemy implements Mortal {
     /**
      * Создать класс Enemy, представляющий собой врага и содержащий поле health (количество здоровья).
      */
-    private static int health;
+    private int health;
     private int damage;
 
     public Enemy(int health) {

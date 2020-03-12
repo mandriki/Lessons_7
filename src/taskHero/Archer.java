@@ -10,7 +10,6 @@ public class Archer extends Hero {
     }
     @Override
     public void attackEnemy() {
-        //Enemy enemy = new Enemy(50);
         System.out.println("Герой воин " + name + " атакует врага. Наносит 60 урона");
         Enemy.takeDamage(60);
 

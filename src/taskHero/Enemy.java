@@ -18,17 +18,16 @@ public class Enemy implements Mortal {
         return health;
     }
     public  void takeDamage(int damage) {
-        //Enemy enemy = new Enemy(100);
         health = health - damage;
         System.out.print(damage + " урон врагу,  ");
         System.out.println(health + " здоровье врага после удара");
     }
     @Override
     public boolean hisAlive() {
-      \**  if(health < 0){
+    if(health < 0){
             return true;}
         else {
-            System.out.println("Надо еще вмазать");*\
+            System.out.println("Надо еще Ударить");
         return false;
         }
         
